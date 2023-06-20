@@ -4,15 +4,16 @@ export const Store = createContext();
 
 
 const initialState = {
-    userInfo: localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')):null,
+    banners: [],
+    collections: []
 }
 
 const reducer = (state, action)=> {
     switch(action.type){
-        case 'USER_LOGIN':
-            return {...state, userInfo: action.payload}; 
-        case 'USER_SIGNOUT':
-            return {...state, userInfo: null};
+        case 'HOME_BANNERS':
+            return {...state, banners: action.payload}; 
+        case 'GEM_COLLECTIONS':
+            return {...state, collections: action.payload};
     }
 }
 

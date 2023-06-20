@@ -1,8 +1,5 @@
-import { useContext } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
-import { Container, Navbar, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
-import LinkContainer  from 'react-router-bootstrap/LinkContainer';
-import { Store } from '../../store/Store';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import logo from '../../assets/img/logo.png';
 import { Telephone, GeoAlt, Search, Cart2, Person } from 'react-bootstrap-icons';
 
@@ -13,7 +10,7 @@ export default function Header() {
       <Container>
       <Row className='py-3'>
         <Col sm={2} className="header_part1 py-2">
-            <a className="nav-link px-4" href="tel:332 959 7262"><Telephone /></a>
+            <a className="nav-link pr-4" href="tel:332 959 7262"><Telephone /></a>
             <a className="nav-link px-4" href="#"><GeoAlt /></a>
         </Col>
         <Col sm={8} className="">
@@ -25,7 +22,7 @@ export default function Header() {
             <div className="collapse navbar-collapse text-center" id="navbarText">
               <ul className="navbar-nav mr-auto text-center">
                 <li className="nav-item">
-                  <a className="nav-link px-4" href="#">Gemas</a>
+                  <a className="nav-link px-4" href="/gemas">Gemas</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link px-4" href="#">Gemas Premium</a>
@@ -40,7 +37,7 @@ export default function Header() {
         <Col sm={2} className="header_part3 py-2">
             <a className="nav-link px-4" href="#"><Search /></a>
             <a className="nav-link px-4" href="#"><Cart2 /></a>
-            <a className="nav-link px-4" href="#"><Person /></a>
+            <a className="nav-link pl-4" href="#"><Person /></a>
         </Col>
       </Row>
       </Container>

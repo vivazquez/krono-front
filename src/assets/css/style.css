@@ -6,10 +6,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-.body-contain{
-  /* min-height: 88vh; */
-}
 .navbar{
   justify-content: flex-end !important;
 }
@@ -31,10 +27,8 @@ body {
   display: flex;
   justify-content: end;
 }
-.collapse.show {
-  /* display: block;
-  background: #959595;
-  margin-top: 10px; */
+.none-underline{
+  text-decoration: none !important;
 }
 .green-color{
   color:#629f6c !important;
@@ -65,6 +59,58 @@ footer .korno-2022{
 .carousel-item{
   height:35vw !important;
 }
+.filter_hide{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filter_hide:hover{
+  cursor: pointer;
+}
+.product-img-box{
+  border: 1px solid #629f6c;
+}
+.accordion-item, .filter_apply_btn_box {
+  border: none !important;
+  border-top: 1px solid #629f6c !important;
+  border-radius: 0 !important;
+}
+.accordion-button:focus{
+  box-shadow: none  !important;
+}
+.apply_filter_btn{
+    border: none !important;
+    background-color: #629f6c !important;
+    color: white !important
+}
+.form-check-inline {
+  display: flex !important;
+}
+.form-check-input:checked {
+  background-color: #629f6c !important;
+  border-color: #629f6c !important;
+}
+.form-check-input{
+  border:1px solid black !important;
+}
+.form-check-inline:hover, .form-check-input:hover, .form-check-label:hover{
+  cursor: pointer !important;
+}
+.price_filter_form .form-check-label{
+  font-size: 13px !important;
+}
+.product_item{
+  border-bottom: 1px solid black;
+}
+.add_to_bag{
+  background-color: #629f6c !important;
+  color: white !important;
+  border-radius: 50px !important;
+  border:1px solid #629f6c  !important;
+  font-size: 13px !important;
+}
+
+
 
 @media (max-width:540px){
   .header_part1{

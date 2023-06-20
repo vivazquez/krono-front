@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { Row, Col, Carousel  } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Row, Col  } from 'react-bootstrap';
 import SpinBox from '../components/spinner/SpinBox';
 import { getImgs } from '../service/Service';
 import SliderBox from '../components/slider/SliderBox';
@@ -8,12 +8,10 @@ export default function Home() {
     const [sliders, setSliders] = useState([]);
     useEffect(()=>{
         getSliderImgs();
-
     },[]);
 
     const getSliderImgs = async () => {
         const data = await getImgs();
-        console.log(data)
         setSliders([...data]);
     };
 

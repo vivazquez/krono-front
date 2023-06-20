@@ -1,4 +1,4 @@
-import { Row, Col, Carousel  } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 
 export default function SliderBox(props) {
@@ -11,7 +11,7 @@ export default function SliderBox(props) {
                     className="d-block w-100"
                     src={slider.url}
                     alt="First slide"
-                />
+                    />
                 </Carousel.Item>
             ))
           }

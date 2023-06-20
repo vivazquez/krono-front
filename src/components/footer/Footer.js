@@ -1,4 +1,4 @@
-import { Container,Navbar, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import facebook from '../../assets/img/facebook.png';
 import instagram from '../../assets/img/instagram.png';
 import email from '../../assets/img/email.png';
